@@ -1,0 +1,56 @@
+<html>
+
+<%= stylesheet_link_tag('application', :media => 'all') %>
+
+<body>
+  <div class="reports_new">
+
+    <h1>Create Report</h1>
+
+    <%= form_for(:report, :url => {:action => 'create'}) do |f| %>
+    <table summary="Reports form fields">
+
+      <tr>
+        <th>First Name</th>
+        <td><%=f.text_field(:first_name) %></td>
+      </tr>
+      <tr>
+        <th>Last Name</th>
+        <td><%=f.text_field(:last_name) %></td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td><%=f.text_field(:address) %></td>
+      </tr>
+      <tr>
+        <th>City</th>
+        <td><%=f.select :city, ['Yonkers'] %></td>
+      </tr>
+      <tr>
+        <th>State</th>
+        <td><%=f.select :state, ['New York'] %></td>
+      </tr>
+      <tr>
+        <th>Zip Code</th>
+        <td><%=f.select :zip_code, ['10705'] %></td>
+      </tr>
+      <tr>
+        <th>Message</th>
+        <td>
+          <%=f.select :message, [['It smells like sewage', 'It smells like sewage'], ['It smells good', 'It smells good'], ['It does not smell good or bad','It does not smell good or bad'], ['It smells bad, but I do not know what it is','It smells bad, but I do not know what it is']]%>
+        </td>
+
+      </tr>
+
+    </table>
+
+    <div class="form-buttons" >
+      <%=submit_tag("Submit Report", :style=>"width:200px; font-size:12pt; font: Verdana")%>
+    </div>
+    <% end %>
+
+
+  </div>
+
+</body>
+</html>
