@@ -1,14 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang=en>
+<header>
+  <meta charset=utf-8>
+  <h1>Create Report</h1>
+</header>
+
+
 
 <%= stylesheet_link_tag('application', :media => 'all') %>
+<!--<script src="http://code.angularjs.org/1.2.9/angular.min.js">
 
-<body>
-  <div class="reports_new">
-
-    <h1>Create Report</h1>
+</script>-->
 
     <%= form_for(:report, :url => {:action => 'create'}) do |f| %>
-    <table summary="Reports form fields">
+    <table>
 
       <tr>
         <th>First Name</th>
@@ -41,16 +46,11 @@
         </td>
 
       </tr>
-
+      <% end %>
     </table>
 
     <div class="form-buttons" >
       <%=submit_tag("Submit Report", :style=>"width:200px; font-size:12pt; font: Verdana")%>
     </div>
-    <% end %>
 
-
-  </div>
-
-</body>
 </html>

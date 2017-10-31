@@ -2,6 +2,7 @@ class ReportController < ApplicationController
   layout false
 
   def index
+    @report = Report.sorted
   end
 
   def show
@@ -9,6 +10,7 @@ class ReportController < ApplicationController
 
   def new
     @report = Report.new
+    #@reports = Report.sorted
   end
 
   def create

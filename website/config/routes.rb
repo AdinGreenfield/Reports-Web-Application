@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   #get 'report/show'
 get "report/new"
+
 post "report/create"
 
 root "report#new"
