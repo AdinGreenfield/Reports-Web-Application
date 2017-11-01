@@ -1,28 +1,43 @@
 // Place all the styles related to the report controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-header, table, div {display: block;}
+head, body, footer {display: block;}
 html {
   background-color: DarkSeaGreen;
 }
 .form-buttons {
+  text-align: center;
   position: relative;
-  //left: 5px;
+  top: 60px;
+}
+/*body{
+  position: relative;
+  top: 40px;
+}
+footer{
+  position: relative;
+  top: 40px;
+}*/
+table{
+  height: 55%;
+  margin: auto;
+  position: relative;
   top: 20px;
 }
-table{
-  height: 35%;
-  //position: relative;
-  //top: 30%;
-  //left: 5px;
+th{
+  text-align: center;
 }
-header {
-  //position: absolute;
-  //border-bottom: 2px solid black;
+h1 {
+  position: absolute;
+  top: 25px;
+  left: 40%;
+  text-align: center;
+  font-size: 250%;
+}
+head {
   background-color: DarkSlateGray;
-  padding: 15px;
+  padding: 60px;
+  margin: 0;
   width: 100%;
-  left: 50%;
-  top: 0%;
-  font-size: 400%;
+  top: 0px;
 }
