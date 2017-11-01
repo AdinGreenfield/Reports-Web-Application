@@ -2,7 +2,7 @@ class ReportController < ApplicationController
   layout false
 
   def index
-    @report = Report.sorted
+    @reports = Report.sorted
   end
 
   def show
@@ -18,7 +18,7 @@ class ReportController < ApplicationController
     @report = Report.new(report_params)
     #if save succeeds, redirect to the index actions
     if @report.save
-      redirect_to(:action => 'new')
+      redirect_to(:action => 'index')
     else
       #if save fails, redisplay the form so user can fix problems
       render('new')

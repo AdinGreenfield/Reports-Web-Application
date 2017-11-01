@@ -5,6 +5,7 @@ head, body, footer {display: block;}
 html {
   background-color: DarkSeaGreen;
   height: 150%;
+  overflow-x: hidden;
 }
 .form-buttons {
   text-align: center;
@@ -16,6 +17,9 @@ html {
   background-image: image-url("yonkers.jpg");
   background-size: cover;
   height: 450px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 /*body{
   position: relative;

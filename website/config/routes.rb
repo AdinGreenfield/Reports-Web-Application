@@ -8,6 +8,8 @@ get "report/new"
 
 post "report/create"
 
+get "report/index"
+
 root "report#new"
 
 
