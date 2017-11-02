@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  #get 'report/index'
+  get 'report/index'
 
   #get 'report/new'
 
@@ -8,7 +8,7 @@ get "report/new"
 
 post "report/create"
 
-get "report/index"
+#get "report/index"
 
 root "report#new"
 

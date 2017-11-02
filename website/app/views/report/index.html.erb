@@ -8,18 +8,26 @@
   <title></title>
 </head>
 <body>
-  <table summary="actual reports">
+  <table class="reports_ table">
     <tr>
-      <th>Message</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Address</th>
       <th>City</th>
       <th>State</th>
+      <th>Zip Code</th>
+      <th>Message</th>
     </tr>
-    
-    <% @reports.each do |t| %>
+
+    <% @reports.each do |report| %>
     <tr>
-      <td><% t.message %></td>
-      <td><% t.city %></td>
-      <td><% t.state %></td>
+      <td><%= report.first_name %></td>
+      <td><%= report.last_name %></td>
+      <td><%= report.address %></td>
+      <td><%= report.city %></td>
+      <td><%= report.state %></td>
+      <td><%= report.zip_code %></td>
+      <td><%= report.message %></td>
     </tr>
 
     <% end %>
